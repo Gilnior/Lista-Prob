@@ -1,5 +1,6 @@
 azuis <- rep(0, 10)
 verm <- rep(1, 20)
+
 urna <- c(azuis, verm) # Vetor simulando a urna
 
 num <- 10000000 # Número de corridas
