@@ -2,7 +2,7 @@
 
 a <- c(1,0,0)
 result <- c()
-times <- 1000000
+times <- 100000
 
 for (i in 1:times){
   r <- sample(a, 5, T)

@@ -41,6 +41,7 @@ for (j in 1:20){ # j assume o número de tentativas até abir, escolhi simular a
 
 results # resultado das simulações para abrir em j tentativas
 # alguns resultados conseguidos de forma analítica para comparar
+print(results[c(2,3,20)])
 (19/20)*(1/20) # para k=2
 (19/20)^2*(1/20) # para k=3
 (19/20)^19*(1/20) # para k=20
