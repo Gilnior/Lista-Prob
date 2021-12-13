@@ -31,7 +31,7 @@ for (i in 1:num){
   # Letra B
   if (!bola & caixa == "caixa1"){
     b = rbind(b, 1)
-    # Se vier bola branca (!bola = 0) e for a 1° caixa (!caixa = 0), o vetor B
+    # Se vier bola branca (!bola = 0) e for a 1° caixa, o vetor B
     # preencherá com o valor 1
   }  
   if (!bola & caixa == "caixa2") {
