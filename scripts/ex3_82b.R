@@ -1,5 +1,5 @@
-num = 100000
-M = c()
+num = 100000 # Número de corridas
+M = c() # Vetor que conterá os vencedores das "num" partidas
 
 for (i in 1:num){
   A = 0
