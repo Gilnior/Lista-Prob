@@ -1,22 +1,27 @@
 # a
 
-a <- c(1,0,0)
+a <- c(1,0,0) # representa 1/3 de chance de fechamento do relé
 result <- c()
-times <- 100000
+times <- 1000000
 
 for (i in 1:times){
-  r <- sample(a, 5, T)
+  r <- sample(a, 5, T) # define um estado para os 5 relés
   if (r[5]==1 && (sum(r[1:2])==2 | sum(r[3:4])==2)){
+    # se fechar o relé 5 e, ou 1 e 2 estiverem fechados, ou 3 e 4 estiverem fechados
+    # adiciona
     result <- rbind(result,1)
   }else{
+    # caso contrário, adiciona 0
     result <- rbind(result,0)
   }
 }
 
-mean(result)
-53/729
+print(mean(result)) # resultado
+53/729 # resultado analítico
 
 # b 
+# mesma ideia da a, mas com as condições da questão b
+
 a <- c(1,0,0)
 result <- c()
 times <- 10000
@@ -30,5 +35,5 @@ for (i in 1:times){
   }
 }
 
-mean(result)
-25/(81*3)+34/243
+mean(result) # resultado
+25/(81*3)+34/243 # resultado anlítico
